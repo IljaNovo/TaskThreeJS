@@ -1,37 +1,61 @@
+<!DOCTYPE html>
+
 <html>
 
 <head>
    <meta charset="UTF-8" />
-   <link rel="stylesheet" src="style.css" /> 
+   <link rel="stylesheet" href="style.css" /> 
 </head>
 
 <body>
+    <header>
+       <div>
+        Форма заполнения страховой компании "XXX"
+       </div>
+    </header>
+  
    <main>
     <section id="left">
     <form>
+       <div class="blockOfFilds">
+        <div class="field">
         <label for="TypeInsur">Вид страхования</label>
         <select id="TypeInsur">
             <option value="1">КАСКО</option>
             <option value="2">ОСАГО</option>
             <option value="3">ДАГО</option>
         </select> <br />
-     
+        </div>
+       
+        <div class="field">
         <label for="policyNumber">Номер полиса</label>
-        <input type="text" id="textBoxOne" /> <br />
+        <input type="text" id="policyNumber" /> <br />
+        </div>
      
-        <label for="insured">Страхователь</label>
-        <input type="text" id="insured" /> <br />
+        <div class="field">
+            <label for="insured">Страхователь</label>
+            <input type="text" id="insured" /> <br />
+        </div>
+           
+        <div class="field">
+            <label for="saleDate">Дата продажи</label>
+            <input type="text" id="saleDate" /> <br />
+        </div>
         
-        <label for="saleDate">Дата продажи</label>
-        <input type="text" id="saleDate" /> <br />
-     
-        <label for="insurancePremium">Страховая премия</label>
-        <input type="text" id="insurancePremium" /> <br />
-    
-        <label for="discount">Скидка</label>
-        <input type="text" id="discount" /> <br />
-     
-        <input type="button" id="logButton" value="Записать данные в таблицу"/>
+        <div class="field">
+            <label for="insurancePremium">Страховая премия</label>
+            <input type="text" id="insurancePremium" /> <br />
+        </div>
+        
+        <div class="field">
+            <label for="discount">Скидка</label>
+            <input type="text" id="discount" /> <br />
+        </div>
+       </div>
+       
+        <div class="blockButton">
+            <input type="button" id="logButton" value="Записать данные в таблицу"/>
+        </div>
     </form>
     </section>
     
@@ -40,6 +64,12 @@
     </section>
     
     </main>
+    
+    <footer>
+       <div>
+           А здесь у нас должел быть "подвал"
+       </div>
+    </footer>
 </body>
 
 </html>

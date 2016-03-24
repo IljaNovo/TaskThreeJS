@@ -1,0 +1,88 @@
+#left {
+    float: left;
+    width: 49%;
+    height: 200px;
+    border: 1px solid black;
+    padding: 2px;
+    display: table;
+}
+
+#right {
+    float: right;
+    width: 49%;
+    height: 200px;
+    border: 1px solid black;
+    padding: 2px;
+}
+
+header {
+    display: table;
+    width: 100%;
+}
+
+header div {
+    display: table-cell;
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#storageDate {
+    text-align: center;
+}
+
+footer {
+    clear: both;
+    
+}
+
+footer {
+    display: table;
+    width: 100%;
+}
+
+footer div {
+    display: table-cell;
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#TypeInsur {
+  width: 166px;
+}
+
+/*
+#logButton {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+*/
+
+#left .field {
+    clear: both;
+    text-align: right;
+    padding-bottom: 3px;
+    line-height: 25px;
+    
+}
+
+#left label {
+    float: left;
+}
+
+
+.blockOfFilds {
+    width: 310px;
+    margin: auto;
+}
+
+.blockButton {
+    width: 200px;
+    margin: auto;
+}
+
+#logButton {
+    width: 200px;
+}
