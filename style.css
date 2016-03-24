@@ -48,10 +48,6 @@ footer div {
     text-align: center;
 }
 
-#TypeInsur {
-  width: 166px;
-}
-
 /*
 #logButton {
     display: table-cell;
@@ -65,6 +61,7 @@ footer div {
     text-align: right;
     padding-bottom: 3px;
     line-height: 25px;
+    
     
 }
 
@@ -85,4 +82,8 @@ footer div {
 
 #logButton {
     width: 200px;
+}
+
+.blockOfFilds .text {
+    width: 166px;   
 }
