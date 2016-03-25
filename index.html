@@ -5,7 +5,12 @@
 <head>
    <meta charset="UTF-8" />
    <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
    <script type="text/javascript" src="DAGO.js"></script> 
+   <script type="text/javascript" src="datepicer.js"></script>
 </head>
 
 <body>
@@ -40,7 +45,7 @@
            
         <div class="field">
             <label for="saleDate">Дата продажи</label>
-            <input type="text" class="text" id="saleDate" /> <br />
+            <input type="text" class="text" id="saleDate"/> <br />
         </div>
         
         <div class="field">
@@ -55,7 +60,9 @@
        </div>
        
         <div class="blockButton">
-            <input type="button" id="logButton" value="Записать данные в таблицу"/>
+            <input type="button" id="writeButton" value="Записать данные в таблицу"/>
+            <input type="button" id="deleteButton" value="Удалить выбранные данные из таблицы"/>
+            <input type="button" id="deleteAllButton" value="Удалить все данные из таблицы"/>
         </div>
     </form>
     </section>

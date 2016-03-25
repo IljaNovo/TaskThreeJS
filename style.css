@@ -1,7 +1,7 @@
 #left {
     float: left;
     width: 49%;
-    height: 200px;
+    height: 256px;
     border: 1px solid black;
     padding: 2px;
     display: table;
@@ -10,7 +10,7 @@
 #right {
     float: right;
     width: 49%;
-    height: 200px;
+    height: 256px;
     border: 1px solid black;
     padding: 2px;
 }
@@ -48,13 +48,7 @@ footer div {
     text-align: center;
 }
 
-/*
-#logButton {
-    display: table-cell;
-    vertical-align: middle;
-}
 
-*/
 
 #left .field {
     clear: both;
@@ -76,12 +70,25 @@ footer div {
 }
 
 .blockButton {
-    width: 200px;
-    margin: auto;
+    width: 310px;
+    margin: 0 auto;
+    
 }
 
-#logButton {
-    width: 200px;
+#writeButton {
+    margin-top: 10px;
+    width: 270px;
+    margin-bottom: 5px;
+}
+
+#deleteButton {
+    width: 270px;
+    margin-bottom: 5px;
+}
+
+#deleteAllButton {
+    width: 270px;
+    margin-bottom: 5px;
 }
 
 .blockOfFilds .text {
