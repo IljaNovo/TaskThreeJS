@@ -1,4 +1,6 @@
 function OSAGO(number) {
+    this._type = "OSAGO";
+    
     this.regexpNumber = /^[aAbBcCeExX][aAbBcCeExX][aAbBcCeExX][0-9]{10}$/;
     InsuranceType.call(this, number);
 }
@@ -21,4 +23,10 @@ Object.defineProperty(OSAGO.prototype, "insuranceNumber", {
         throw "ErrorSetInsuranceNumber";
     }
   }
+});
+
+Object.defineProperty(OSAGO.prototype, "type", {
+  get: function () {
+    return this._type;
+  },
 });

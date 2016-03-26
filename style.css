@@ -48,21 +48,16 @@ footer div {
     text-align: center;
 }
 
-
-
 #left .field {
     clear: both;
     text-align: right;
     padding-bottom: 3px;
-    line-height: 25px;
-    
-    
+    line-height: 25px;   
 }
 
 #left label {
     float: left;
 }
-
 
 .blockOfFilds {
     width: 310px;
@@ -71,8 +66,7 @@ footer div {
 
 .blockButton {
     width: 310px;
-    margin: 0 auto;
-    
+    margin: 0 auto;    
 }
 
 #writeButton {

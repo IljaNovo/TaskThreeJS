@@ -1,5 +1,6 @@
 function InsuranceType(number) {
-      
+    this._type = undefined;
+    
     if (this.regexpNumber === undefined) {
        this.regexpNumber = /[0-9][0-9][0-9]/;
     }
@@ -29,4 +30,10 @@ Object.defineProperty(InsuranceType.prototype, "insuranceNumber", {
         throw "ErrorSetInsuranceNumber";
     }
   }
+});
+
+Object.defineProperty(InsuranceType.prototype, "type", {
+  get: function () {
+    return this._type;
+  },
 });

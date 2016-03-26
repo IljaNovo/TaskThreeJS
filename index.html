@@ -6,11 +6,19 @@
    <meta charset="UTF-8" />
    <link rel="stylesheet" href="style.css" />
    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-
    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-   <script type="text/javascript" src="DAGO.js"></script> 
    <script type="text/javascript" src="datepicer.js"></script>
+           
+   <script type="text/javascript" src="Insurer.js"></script>
+   <script type="text/javascript" src="Insurance.js"></script>  
+   <script type="text/javascript" src="InsuranceType.js"></script>
+   <script type="text/javascript" src="DAGO.js"></script> 
+   <script type="text/javascript" src="KASKO.js"></script>
+   <script type="text/javascript" src="OSAGO.js"></script>
+   <script type="text/javascript" src="DateManager.js"></script>
+   <script type="text/javascript" src="DisplayDateService.js"></script>    
+   
 </head>
 
 <body>
@@ -60,7 +68,7 @@
        </div>
        
         <div class="blockButton">
-            <input type="button" id="writeButton" value="Записать данные в таблицу"/>
+            <input type="button" onclick=(displayDateService.showDate(1234)) id="writeButton" value="Записать данные в таблицу"/>
             <input type="button" id="deleteButton" value="Удалить выбранные данные из таблицы"/>
             <input type="button" id="deleteAllButton" value="Удалить все данные из таблицы"/>
         </div>
@@ -68,7 +76,7 @@
     </section>
     
     <section id="right">
-        <div id="storageDate">Здесь будут отображаться данные Storage</div>
+        <div id="storageDate">Здесь отображаются данные Storage</div>
     </section>
     
     </main>
