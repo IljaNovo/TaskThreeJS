@@ -1,7 +1,7 @@
 #left {
     float: left;
     width: 49%;
-    height: 256px;
+    height: 282px;
     border: 1px solid black;
     padding: 2px;
     display: table;
@@ -10,10 +10,10 @@
 #right {
     float: right;
     width: 49%;
-    height: 256px;
+    height: 282px;
     border: 1px solid black;
     padding: 2px;
-    overflow: auto;
+    padding-right: 0;
 }
 
 header {
@@ -28,8 +28,13 @@ header div {
     text-align: center;
 }
 
-#storageDate {
+#headerDate {
     text-align: center;
+}
+
+#storageDate {
+    height: 265px;
+    overflow: auto;
 }
 
 footer {
@@ -82,6 +87,11 @@ footer div {
 }
 
 #deleteAllButton {
+    width: 270px;
+    margin-bottom: 5px;
+}
+
+#showDateButton {
     width: 270px;
     margin-bottom: 5px;
 }

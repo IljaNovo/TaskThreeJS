@@ -69,6 +69,7 @@
        
         <div class="blockButton">
             <input type="button" onclick="dateManager.setDate()" id="writeButton" value="Записать данные в таблицу"/>
+            <input type="button" onclick="displayDateService.showDate()" id="showDateButton" value="Отобразить данные"/>
             <input type="button" id="deleteButton" value="Удалить выбранные данные из таблицы"/>
             <input type="button" id="deleteAllButton" value="Удалить все данные из таблицы"/>
         </div>
@@ -76,7 +77,8 @@
     </section>
     
     <section id="right">
-        <div id="storageDate">Здесь отображаются данные Storage</div>
+        <div id="headerDate">Здесь отображаются данные Storage</div>
+        <div id="storageDate"></div>
     </section>
     
     </main>
