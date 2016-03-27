@@ -1,7 +1,7 @@
 function OSAGO(number) {
     this._type = "OSAGO";
     
-    this.regexpNumber = /^[aAbBcCeExX][aAbBcCeExX][aAbBcCeExX][0-9]{10}$/;
+    this._regexpNumber = /^[aAbBcCeExX][aAbBcCeExX][aAbBcCeExX][0-9]{10}$/;
     InsuranceType.call(this, number);
 }
 
@@ -12,13 +12,13 @@ DAGO.prototype.checkValidNumber = function(number) {
     InsuranceType.prototype.checkValidNumbe.call(this, number);
 };
 
-Object.defineProperty(OSAGO.prototype, "insuranceNumber", {
+Object.defineProperty(OSAGO.prototype, "number", {
   get: function () {
-    return this.number;
+    return this._number;
   },
   set: function (number) {
-      if (this.number.test(number)) {
-        this.number = number;    
+      if (this._number.test(number)) {
+        this._number = number;    
     } else {
         throw "ErrorSetInsuranceNumber";
     }

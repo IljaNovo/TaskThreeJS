@@ -1,31 +1,32 @@
 function InsuranceType(number) {
-    this._type = undefined;
-    
-    if (this.regexpNumber === undefined) {
-       this.regexpNumber = /[0-9][0-9][0-9]/;
+    if (this._type === undefined) {
+        this._type = undefined;    
     }
-    if(this.regexpNumber.test(number)) {
-        this.number = number;    
+    if (this._regexpNumber === undefined) {
+       this._regexpNumber = /[0-9][0-9][0-9]/;
+    }
+    if(this._regexpNumber.test(number)) {
+        this._number = number;    
     } else {
         throw "ErrorSetInsuranceNumber";
     }
 }
 
 InsuranceType.prototype.checkValidNumber = function(number) {
-    if (this.regexpNumber.test(number)) {
+    if (this._regexpNumber.test(number)) {
         return true;
     } else {
         return false;
     }
 };
 
-Object.defineProperty(InsuranceType.prototype, "insuranceNumber", {
+Object.defineProperty(InsuranceType.prototype, "number", {
   get: function () {
-    return this.number;
+    return this._number;
   },
   set: function (number) {
-    if (this.regexpNumber.test(number)) {
-        this.number = number;    
+    if (this._regexpNumber.test(number)) {
+        this._number = number;    
     } else {
         throw "ErrorSetInsuranceNumber";
     }

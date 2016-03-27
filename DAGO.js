@@ -1,7 +1,7 @@
 function DAGO(number) {
     this._type = "DAGO";
     
-    this.regexpNumber = /^[0][0-4][0-9][gG][oO][-][0-2][0-9][/][0-9]{5}$/;
+    this._regexpNumber = /^[0][0-4][0-9][gG][oO][-][0-2][0-9][/][0-9]{5}$/;
     InsuranceType.call(this, number);
 }
 
@@ -12,13 +12,13 @@ DAGO.prototype.checkValidNumber = function(number) {
     InsuranceType.prototype.checkValidNumbe.call(this, number);
 };
 
-Object.defineProperty(DAGO.prototype, "insuranceNumber", {
+Object.defineProperty(DAGO.prototype, "number", {
   get: function () {
-    return this.number;
+    return this._number;
   },
   set: function (number) {
-      if (this.number.test(number)) {
-        this.number = number;    
+      if (this._number.test(number)) {
+        this._number = number;    
     } else {
         throw "ErrorSetInsuranceNumber";
     }

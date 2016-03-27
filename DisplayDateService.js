@@ -1,12 +1,14 @@
 var displayDateService = (function() {
     
-    function showDate(number) {
-        var displayTag = document.querySelector("#storageDate");
+    function showDate() {
+        var displayTag = document.getElementById("right");
         
-        displayTag.innerHTML += "<br /Какой хороший день!>";
+        
+        
+        displayTag.innerHTML += "<br />Какой хороший день!";
     }
     return {
-        show : show
+        showDate : showDate
     };
     
 })();

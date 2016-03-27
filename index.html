@@ -13,7 +13,7 @@
    <script type="text/javascript" src="Insurer.js"></script>
    <script type="text/javascript" src="Insurance.js"></script>  
    <script type="text/javascript" src="InsuranceType.js"></script>
-   <script type="text/javascript" src="DAGO.js"></script> 
+   <script type="text/javascript" src="DAGO.js"></script>
    <script type="text/javascript" src="KASKO.js"></script>
    <script type="text/javascript" src="OSAGO.js"></script>
    <script type="text/javascript" src="DateManager.js"></script>
@@ -33,11 +33,11 @@
     <form>
        <div class="blockOfFilds">
         <div class="field">
-        <label for="TypeInsur">Вид страхования</label>
-        <select class="text" id="TypeInsur">
-            <option value="1">КАСКО</option>
-            <option value="2">ОСАГО</option>
-            <option value="3">ДАГО</option>
+        <label for="typeInsur">Вид страхования</label>
+        <select class="text" id="typeInsur">
+            <option value="KASKO">КАСКО</option>
+            <option value="OSAGO">ОСАГО</option>
+            <option value="DAGO">ДАГО</option>
         </select> <br />
         </div>
        
@@ -68,7 +68,7 @@
        </div>
        
         <div class="blockButton">
-            <input type="button" onclick=(displayDateService.showDate(1234)) id="writeButton" value="Записать данные в таблицу"/>
+            <input type="button" onclick="dateManager.setDate()" id="writeButton" value="Записать данные в таблицу"/>
             <input type="button" id="deleteButton" value="Удалить выбранные данные из таблицы"/>
             <input type="button" id="deleteAllButton" value="Удалить все данные из таблицы"/>
         </div>
