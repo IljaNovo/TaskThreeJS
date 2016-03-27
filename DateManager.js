@@ -34,14 +34,33 @@ var dateManager = (function() {
             saleDate : insurance.saleDate
         }));
     } 
-
     
     function getDateStorage(insuranceNumber) {
         return JSON.parse(localStorage.getItem(insuranceNumber));
     }
     
+    function deleteAllDate() {
+        if (localStorage.length !== 0) {
+            localStorage.clear();
+        }
+        else {
+            throw "Items not found";
+        }
+    }
+
+    function deleteDate() {
+        if (localStorage.length !== 0) {
+            localStorage.removeItem(localStorage.key(0));
+        }
+        else {
+            throw "Items not found";
+        }
+    }
+    
     return {
         getDateStorage : getDateStorage,
-        setDate : setDate
+        setDate : setDate,
+        deleteAllDate : deleteAllDate,
+        deleteDate : deleteDate
     }
 })();
