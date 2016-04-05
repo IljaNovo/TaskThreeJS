@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+   <meta charset="UTF-8" />
+   <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+   <script type="text/javascript" src="datepicer.js"></script>
+           
+   <script type="text/javascript" src="Insurer.js"></script>
+   <script type="text/javascript" src="Insurance.js"></script>  
+   <script type="text/javascript" src="InsuranceType.js"></script>
+   <script type="text/javascript" src="DAGO.js"></script>
+   <script type="text/javascript" src="KASKO.js"></script>
+   <script type="text/javascript" src="OSAGO.js"></script>
+   <script type="text/javascript" src="DateManager.js"></script>
+   <script type="text/javascript" src="DisplayDateService.js"></script>    
+   
+</head>
+
+<body>
+    <header>
+       <div>
+        Форма заполнения страховой компании "XXX"
+       </div>
+    </header>
+  
+   <main>
+    <section id="left">
+    <form>
+       <div class="blockOfFilds">
+        <div class="field">
+        <label for="typeInsur">Вид страхования</label>
+        <select class="text" id="typeInsur">
+            <option value="KASKO">КАСКО</option>
+            <option value="OSAGO">ОСАГО</option>
+            <option value="DAGO">ДАГО</option>
+        </select> <br />
+        </div>
+       
+        <div class="field">
+        <label for="policyNumber">Номер полиса</label>
+        <input type="text" class="text" id="policyNumber" /> <br />
+        </div>
+     
+        <div class="field">
+            <label for="insured">Страхователь</label>
+            <input type="text" class="text" id="insured" /> <br />
+        </div>
+           
+        <div class="field">
+            <label for="saleDate">Дата продажи</label>
+            <input type="text" class="text" id="saleDate"/> <br />
+        </div>
+        
+        <div class="field">
+            <label for="insurancePremium">Страховая премия</label>
+            <input type="text" class="text" id="insurancePremium" /> <br />
+        </div>
+        
+        <div class="field">
+            <label for="discount">Скидка</label>
+            <input type="text" class="text" id="discount" /> <br />
+        </div>
+       </div>
+       
+        <div class="blockButton">
+            <input type="button" onclick="dateManager.setDate()" id="writeButton" value="Записать данные в таблицу"/>
+            <input type="button" onclick="displayDateService.showDate()" id="showDateButton" value="Отобразить данные"/>
+            <input type="button" onclick="dateManager.deleteDate()" id="deleteButton" value="Удалить первую запись из таблицы"/>
+            <input type="button" onclick="dateManager.deleteAllDate()" id="deleteAllButton" value="Удалить все данные из таблицы"/>
+        </div>
+    </form>
+    </section>
+    
+    <section id="right">
+        <div id="headerDate">Здесь отображаются данные Storage</div>
+        <div id="storageDate"></div>
+    </section>
+    
+    </main>
+    
+    <footer>
+       <div>
+           А здесь у нас должел быть "подвал"
+       </div>
+    </footer>
+</body>
+
+</html>

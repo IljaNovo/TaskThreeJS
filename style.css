@@ -1,0 +1,101 @@
+#left {
+    float: left;
+    width: 49%;
+    height: 282px;
+    border: 1px solid black;
+    padding: 2px;
+    display: table;
+}
+
+#right {
+    float: right;
+    width: 49%;
+    height: 282px;
+    border: 1px solid black;
+    padding: 2px;
+    padding-right: 0;
+}
+
+header {
+    display: table;
+    width: 100%;
+}
+
+header div {
+    display: table-cell;
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#headerDate {
+    text-align: center;
+}
+
+#storageDate {
+    height: 265px;
+    overflow: auto;
+}
+
+footer {
+    clear: both;
+    
+}
+
+footer {
+    display: table;
+    width: 100%;
+}
+
+footer div {
+    display: table-cell;
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#left .field {
+    clear: both;
+    text-align: right;
+    padding-bottom: 3px;
+    line-height: 25px;   
+}
+
+#left label {
+    float: left;
+}
+
+.blockOfFilds {
+    width: 310px;
+    margin: auto;
+}
+
+.blockButton {
+    width: 310px;
+    margin: 0 auto;    
+}
+
+#writeButton {
+    margin-top: 10px;
+    width: 270px;
+    margin-bottom: 5px;
+}
+
+#deleteButton {
+    width: 270px;
+    margin-bottom: 5px;
+}
+
+#deleteAllButton {
+    width: 270px;
+    margin-bottom: 5px;
+}
+
+#showDateButton {
+    width: 270px;
+    margin-bottom: 5px;
+}
+
+.blockOfFilds .text {
+    width: 166px;   
+}
